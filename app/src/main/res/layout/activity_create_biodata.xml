@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_buat_biodata"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateBiodataActivity">
+
+    <EditText
+        android:id="@+id/editText1a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1a"
+        android:layout_below="@+id/textView1a"
+        android:inputType="number"
+        android:maxLength="10">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Number" />
+
+    <TextView
+        android:id="@+id/textView2a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1a"
+        android:layout_below="@+id/editText1a"
+        android:layout_marginTop="10dp"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/editText2a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2a"
+        android:layout_below="@+id/textView2a"
+        android:inputType="text"
+        android:maxLength="20"/>
+
+    <TextView
+        android:id="@+id/textView3a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText2a"
+        android:layout_below="@+id/editText2a"
+        android:layout_marginTop="10dp"
+        android:text="DOB" />
+
+    <EditText
+        android:id="@+id/editText3a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3a"
+        android:layout_below="@+id/textView3a"
+        android:inputType="date"/>
+
+    <TextView
+        android:id="@+id/textView4a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText3a"
+        android:layout_below="@+id/editText3a"
+        android:layout_marginTop="10dp"
+        android:text="Gender" />
+
+    <EditText
+        android:id="@+id/editText4a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4a"
+        android:layout_below="@+id/textView4a"
+        android:inputType="text"
+        android:maxLength="1"
+        android:hint="M/F"/>
+
+    <TextView
+        android:id="@+id/textView5a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText4a"
+        android:layout_below="@+id/editText4a"
+        android:layout_marginTop="10dp"
+        android:text="Address" />
+
+    <EditText
+        android:id="@+id/editText5a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5a"
+        android:layout_below="@+id/textView5a"
+        android:maxLength="100"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/button1a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText5a"
+        android:layout_alignParentBottom="true"
+        android:text="SAVE" />
+
+    <Button
+        android:id="@+id/button2a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/editText5a"
+        android:layout_alignEnd="@+id/editText5a" />
+
+
+
+</RelativeLayout>
